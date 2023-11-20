@@ -1,0 +1,29 @@
+.containerHeader {
+  background-color: #1872a6;
+  vertical-align: middle;
+}
+.logo {
+  padding: 8px 8px;
+  cursor: pointer;
+  width: 230px;
+}
+.containerLogo {
+  background-color: #fff;
+}
+.containerAvatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.containerUserName {
+  width: 100%;
+}
+.textUserName {
+  padding: 0 8px;
+  color: #fff;
+}
+.userAvatar {
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}

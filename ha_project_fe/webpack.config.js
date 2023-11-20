@@ -18,6 +18,13 @@ module.exports = {
         test: /\.css$/, // Sử dụng style-loader, css-loader cho file .css
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "img/[name][ext]", // Lưu trữ ảnh trong thư mục "images"
+        },
+      },
     ],
   },
   // Chứa các plugins sẽ cài đặt trong tương lai
