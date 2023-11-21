@@ -1,14 +1,18 @@
 import React from "react"; // nạp thư viện react
 import ReactDOM from "react-dom"; // nạp thư viện react-dom
 import Dashboard from "./pages/dashboard";
-import PostList from "./pages/postList";
+import HeaderAdmin from "./components/admin/Header";
+import Leftbar from "./components/admin/Leftbar";
 
 // Tạo component App
 function App() {
   return (
     <div>
-      {/* <Dashboard></Dashboard> */}
-      <PostList></PostList>
+      <Dashboard></Dashboard>
+      {/* <PostList></PostList> */}
+      {/* <AppNavbar></AppNavbar> */}
+      {/* <HeaderAdmin></HeaderAdmin> */}
+      {/* <Leftbar></Leftbar> */}
     </div>
   );
 }

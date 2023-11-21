@@ -1,28 +1,22 @@
-.containerHeader {
-  background-color: #1872a6;
-  vertical-align: middle;
+.containerNavbar {
+  background-color: #dbe9f6;
 }
 .logo {
-  padding: 8px 8px;
+  padding: 0px 8px;
   cursor: pointer;
-  width: 230px;
+  width: 200px;
 }
-.containerLogo {
-  background-color: #fff;
-}
-.containerAvatar {
+
+.containerUser {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.containerUserName {
-  width: 100%;
+.userName {
+  padding: 8px;
+  font-weight: 700;
+  color: #0b3850;
+  margin-bottom: 0;
 }
-.textUserName {
-  padding: 0 8px;
-  color: #fff;
-}
-.userAvatar {
+.iconUser {
   width: 30px;
   border-radius: 50%;
   cursor: pointer;
