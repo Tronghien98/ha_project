@@ -1,8 +1,7 @@
-import React from "react"; // nạp thư viện react
+import React, { Component } from "react"; // nạp thư viện react
 import ReactDOM from "react-dom"; // nạp thư viện react-dom
 import Dashboard from "./pages/dashboard";
-import HeaderAdmin from "./components/admin/Header";
-import Leftbar from "./components/admin/Leftbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Tạo component App
 function App() {
@@ -16,6 +15,8 @@ function App() {
     </div>
   );
 }
+
+export default App;
 
 // Render component App vào #root element
 ReactDOM.render(<App />, document.getElementById("root"));

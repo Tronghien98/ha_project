@@ -21,36 +21,37 @@ class HeaderAdmin extends Component {
 
   render() {
     return (
-      <Navbar className={`${styles.containerNavbar}`}>
-        <NavbarBrand>
-          <img className={`${styles.logo}`} src={logo} alt="logo" />
-        </NavbarBrand>
-        <NavbarBrand>
-          <div className={`${styles.containerUser}`}>
-            <p className={`${styles.userName}`}>Admin</p>
-
-            <div>
-              <img
-                src={user}
-                alt="admin"
-                className={`${styles.iconUser}`}
-                onClick={this.toggle}
-              />
+      <div className="container-fluid p-0">
+        <div className={`${styles.containerNavbar} row`}>
+          <div className={`${styles.containerLogo} col-3`}>
+            <img className={`${styles.logo}`} src={logo} alt="logo" />
+          </div>
+          <div className={`${styles.containerHeaderRight} col-9`}>
+            <div className={`${styles.containerUser}`}>
+              <p className={`${styles.userName}`}>Admin</p>
+              <div className={`${styles.containerIconUser}`}>
+                <img
+                  src={user}
+                  alt="admin"
+                  className={`${styles.iconUser}`}
+                  onClick={this.toggle}
+                />
+              </div>
             </div>
           </div>
-        </NavbarBrand>
-        <Offcanvas
-          isOpen={this.state.isOffcanvasOpen}
-          width={300}
-          toggle={this.toggle}
-          direction="end"
-        >
-          <OffcanvasBody>
-            <strong>This is the Offcanvas body.</strong>
-          </OffcanvasBody>
-        </Offcanvas>
-        {/* <NavbarToggler onClick={this.toggle} /> */}
-      </Navbar>
+          <Offcanvas
+            isOpen={this.state.isOffcanvasOpen}
+            width={300}
+            toggle={this.toggle}
+            direction="end"
+          >
+            <OffcanvasBody>
+              <strong>This is the Offcanvas body.</strong>
+            </OffcanvasBody>
+          </Offcanvas>
+          {/* <NavbarToggler onClick={this.toggle} /> */}
+        </div>
+      </div>
     );
   }
 }

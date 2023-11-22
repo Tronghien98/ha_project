@@ -1,20 +1,33 @@
 .containerNavbar {
-  background-color: #dbe9f6;
+  background-color: #1872a6;
+}
+.containerLogo {
+  background-color: #fff;
 }
 .logo {
-  padding: 0px 8px;
+  padding: 8px 0px;
   cursor: pointer;
   width: 200px;
 }
-
+.containerHeaderRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .containerUser {
   display: flex;
+  justify-content: flex-end;
 }
 .userName {
   padding: 8px;
   font-weight: 700;
   color: #0b3850;
   margin-bottom: 0;
+}
+.containerIconUser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .iconUser {
   width: 30px;
