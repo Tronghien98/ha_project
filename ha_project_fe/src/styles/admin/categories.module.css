@@ -1,0 +1,46 @@
+.containerContent {
+  background-color: #f1f3f5;
+}
+
+.containerCategory,
+.containerTable {
+  margin: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.conditionSeach {
+  padding: 24px;
+}
+
+.label {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #1872a6;
+  font-weight: 700;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 24px;
+  border: 1px solid #1872a6;
+  border-radius: 5px;
+}
+
+.btnSeach {
+  background-color: #1872a6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 16px;
+}
+
+.btnSeach:hover {
+  background-color: #1872e6;
+}
+
+.colTableNum {
+  width: 40px;
+  text-align: center;
+}
