@@ -22,7 +22,7 @@ class HeaderAdmin extends Component {
   render() {
     return (
       <div className="container-fluid p-0">
-        <div className={`${styles.containerNavbar} row`}>
+        <div className={`${styles.containerNavbar} row mx-0`}>
           <div className={`${styles.containerLogo} col-3`}>
             <img className={`${styles.logo}`} src={logo} alt="logo" />
           </div>

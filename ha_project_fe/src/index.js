@@ -1,6 +1,6 @@
 import React, { Component } from "react"; // nạp thư viện react
 import ReactDOM from "react-dom"; // nạp thư viện react-dom
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/admin/Dashboard";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Tạo component App

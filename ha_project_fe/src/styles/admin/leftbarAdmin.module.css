@@ -2,3 +2,7 @@
   background-color: #1872a6;
   height: 100vh;
 }
+
+.menu:hover {
+  background-color: #1872e6;
+}
