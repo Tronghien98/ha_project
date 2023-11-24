@@ -2,16 +2,18 @@ import React, { Component } from "react"; // nạp thư viện react
 import ReactDOM from "react-dom"; // nạp thư viện react-dom
 import Dashboard from "./pages/admin/Dashboard";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Categories from "./pages/admin/Categories";
 
 // Tạo component App
 function App() {
   return (
     <div>
-      <Dashboard></Dashboard>
+      {/* <Dashboard></Dashboard> */}
       {/* <PostList></PostList> */}
       {/* <AppNavbar></AppNavbar> */}
       {/* <HeaderAdmin></HeaderAdmin> */}
       {/* <Leftbar></Leftbar> */}
+      <Categories />
     </div>
   );
 }

@@ -9,10 +9,10 @@ class LeftbarAdmin extends Component {
   render() {
     return (
       <div className={`${styles.containerLeftbar}`}>
-        <nav className="navbar navbar-vertical w-100">
-          <ul className="navbar-nav w-100">
+        <nav className="navbar navbar-vertical w-100 py-5">
+          <ul className="navbar-nav w-100 py-5">
             <li
-              className={`nav-item border-bottom border-white px-5 ${styles.menu}`}
+              className={`nav-item border-top border-bottom border-white px-5 ${styles.menu}`}
             >
               <a className="nav-link text-white" href="#">
                 <i className="bi bi-house"></i>

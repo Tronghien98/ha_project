@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import HeaderAdmin from "../../components/admin/Header";
-import LeftbarAdmin from "../../components/admin/leftbar";
+import LeftbarAdmin from "../../components/admin/Leftbar";
 
 class Dashboard extends Component {
   constructor(props) {

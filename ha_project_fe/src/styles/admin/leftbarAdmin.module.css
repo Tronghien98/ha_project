@@ -1,6 +1,6 @@
 .containerLeftbar {
   background-color: #1872a6;
-  height: 100vh;
+  height: calc(100vh - 72.29px);
 }
 
 .menu:hover {
