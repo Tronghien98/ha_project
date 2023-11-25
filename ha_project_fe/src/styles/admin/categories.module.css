@@ -44,3 +44,12 @@
   width: 40px;
   text-align: center;
 }
+
+.colTableAction {
+  width: 170px;
+}
+
+.btnUpDown {
+  width: 32px;
+  display: inline-block;
+}
