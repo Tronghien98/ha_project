@@ -7,12 +7,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Entity
 @Table(name = "ha_category")
+
 public class Category {
 
     @Id
@@ -20,6 +22,7 @@ public class Category {
     private int catID;
 
     @Column(name = "ha_cat_name")
+
     private String catName;
 
     @Column(name = "ha_cat_order")

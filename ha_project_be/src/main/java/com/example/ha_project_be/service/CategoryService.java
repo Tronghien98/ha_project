@@ -14,4 +14,8 @@ public interface CategoryService {
 
     List<Category> getListCategories();
 
+    List<Category> findByCatName(String catName);
+
+
+
 }

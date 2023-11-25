@@ -4,11 +4,9 @@ import com.example.ha_project_be.entity.Category;
 
 import com.example.ha_project_be.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -18,9 +16,16 @@ public class CategoryServiceImpl implements CategoryService{
     private CategoryRepository categoryRepository;
 
 
+
     @Override
     public List<Category> getListCategories() {
         return (List<Category>) categoryRepository.findAll();
     }
+
+    @Override
+    public List<Category> findByCatName(String catName) {
+        return categoryRepository.findCategoriesByCatNameLike("%" + catName + "%");
+    }
+
 }
 
