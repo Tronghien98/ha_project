@@ -12,8 +12,28 @@ import { Input, Button, Table } from "reactstrap";
 class Categories extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      conditionCatName: "",
+      categories: [],
+    };
   }
+  handleInputCatNameChange = (e) => {
+    this.setState({ conditionCatName: e.target.value });
+  };
+  handleSearchCategory = () => {
+    const { conditionCatName } = this.state;
+
+    fetch(`api/v1/cats/search?catName=${conditionCatName}`)
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ categories: data });
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  };
   render() {
+    const { conditionCatName, categories } = this.state;
     return (
       <div>
         <HeaderAdmin />
@@ -24,21 +44,36 @@ class Categories extends Component {
             </div>
             <div className={`col-9 ${styles.containerContent}`}>
               <div className={`${styles.containerCategory}`}>
-                <div className={`${styles.conditionSeach}`}>
+                <div>
                   <form>
                     <div className={`${styles.label}`}>
                       <label>Tên danh mục</label>
                     </div>
 
-                    <Input className={`${styles.input}`} />
+                    <Input
+                      className={`${styles.input}`}
+                      value={conditionCatName}
+                      onChange={this.handleInputCatNameChange}
+                    />
 
                     <div>
-                      <Button className={`${styles.btnSeach}`}>Tìm kiếm</Button>
+                      <Button
+                        className={`${styles.btnPrimary}`}
+                        onClick={this.handleSearchCategory}
+                      >
+                        Tìm kiếm
+                      </Button>
                     </div>
                   </form>
                 </div>
               </div>
               <div className={`${styles.containerTable}`}>
+                <div className={`${styles.headerResult}`}>
+                  <h5>Kết quả tìm kiếm</h5>
+                  <Button className={`${styles.btnPrimary}`}>
+                    Thêm danh mục
+                  </Button>
+                </div>
                 <Table striped bordered>
                   <thead>
                     <tr>

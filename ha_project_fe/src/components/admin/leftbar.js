@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../../styles/admin/leftbarAdmin.module.css";
+import { Link } from "react-router-dom";
 
 class LeftbarAdmin extends Component {
   constructor(props) {
@@ -14,18 +15,16 @@ class LeftbarAdmin extends Component {
             <li
               className={`nav-item border-top border-bottom border-white px-5 ${styles.menu}`}
             >
-              <a className="nav-link text-white" href="#">
-                <i className="bi bi-house"></i>
+              <Link to="/" className="nav-link text-white">
                 Trang chủ
-              </a>
+              </Link>
             </li>
             <li
               className={`nav-item border-bottom border-white px-5 ${styles.menu}`}
             >
-              <a className="nav-link text-white" href="#">
-                <i className="bi bi-file-earmark-person"></i>
+              <Link to="/danh-muc" className="nav-link text-white">
                 Quản lí danh mục
-              </a>
+              </Link>
             </li>
             <li
               className={`nav-item border-bottom border-white px-5 ${styles.menu}`}

@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../../../images/Logo + Hải âu + Slogan.png";
 import user from "../../../images/icon-user-default.png";
 import { Offcanvas, OffcanvasBody, Navbar, NavbarBrand } from "reactstrap";
+import { Link } from "react-router-dom";
 
 class HeaderAdmin extends Component {
   constructor(props) {
@@ -19,12 +20,16 @@ class HeaderAdmin extends Component {
     });
   }
 
+  search() {}
+
   render() {
     return (
       <div className="container-fluid p-0">
         <div className={`${styles.containerNavbar} row mx-0`}>
           <div className={`${styles.containerLogo} col-3`}>
-            <img className={`${styles.logo}`} src={logo} alt="logo" />
+            <Link to="/">
+              <img className={`${styles.logo}`} src={logo} alt="logo" />
+            </Link>
           </div>
           <div className={`${styles.containerHeaderRight} col-9`}>
             <div className={`${styles.containerUser}`}>

@@ -10,10 +10,6 @@
   padding: 24px;
 }
 
-.conditionSeach {
-  padding: 24px;
-}
-
 .label {
   margin-bottom: 16px;
   font-size: 18px;
@@ -28,16 +24,11 @@
   border-radius: 5px;
 }
 
-.btnSeach {
-  background-color: #1872a6;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 16px;
-}
-
-.btnSeach:hover {
-  background-color: #1872e6;
+.headerResult {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .colTableNum {
@@ -52,4 +43,16 @@
 .btnUpDown {
   width: 32px;
   display: inline-block;
+}
+
+.btnPrimary {
+  background-color: #1872a6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 16px;
+}
+
+.btnPrimary:hover {
+  background-color: #1872e6;
 }
