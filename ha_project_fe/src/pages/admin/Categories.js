@@ -3,6 +3,7 @@ import React, { Component, Fragment } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import styles from "../../styles/admin/categories.module.css";
+import theme from "../../styles/admin/theme.module.css";
 
 import HeaderAdmin from "../../components/admin/Header";
 import LeftbarAdmin from "../../components/admin/Leftbar";
@@ -34,6 +35,7 @@ class Categories extends Component {
   };
   render() {
     const { conditionCatName, categories } = this.state;
+
     return (
       <div>
         <HeaderAdmin />
@@ -42,7 +44,7 @@ class Categories extends Component {
             <div className="col-3 p-0">
               <LeftbarAdmin />
             </div>
-            <div className={`col-9 ${styles.containerContent}`}>
+            <div className={`col-9 ${theme.background}`}>
               <div className={`${styles.containerCategory}`}>
                 <div>
                   <form>
@@ -58,7 +60,7 @@ class Categories extends Component {
 
                     <div>
                       <Button
-                        className={`${styles.btnPrimary}`}
+                        className={`${theme.btnPrimary}`}
                         onClick={this.handleSearchCategory}
                       >
                         Tìm kiếm
@@ -68,9 +70,9 @@ class Categories extends Component {
                 </div>
               </div>
               <div className={`${styles.containerTable}`}>
-                <div className={`${styles.headerResult}`}>
+                <div className={`${theme.headerResult}`}>
                   <h5>Kết quả tìm kiếm</h5>
-                  <Button className={`${styles.btnPrimary}`}>
+                  <Button className={`${theme.btnPrimary}`}>
                     Thêm danh mục
                   </Button>
                 </div>

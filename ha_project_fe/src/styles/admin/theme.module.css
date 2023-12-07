@@ -1,0 +1,21 @@
+.headerResult {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.btnPrimary {
+  background-color: #1872a6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 16px;
+}
+.btnPrimary:hover {
+  background-color: #1872e6;
+}
+
+.background {
+  background-color: #f1f3f5;
+}

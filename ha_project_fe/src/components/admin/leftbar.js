@@ -29,10 +29,9 @@ class LeftbarAdmin extends Component {
             <li
               className={`nav-item border-bottom border-white px-5 ${styles.menu}`}
             >
-              <a className="nav-link text-white" href="#">
-                <i className="bi bi-file-earmark-person"></i>
+              <Link to="/san-pham" className="nav-link text-white">
                 Quản lí sản phẩm
-              </a>
+              </Link>
             </li>
             <li
               className={`nav-item border-bottom border-white px-5 ${styles.menu}`}
